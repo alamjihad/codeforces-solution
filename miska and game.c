@@ -32,4 +32,5 @@ int main ()
         printf("Friendship is magic!^^");
     }
     return 0;
+    
 }
