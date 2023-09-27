@@ -6,21 +6,15 @@ void ans(int n,int k)
         {
             scanf("%d",&arr[i]);
         }
-       /* printf("%d",k);
-        return 0;*/
         for(int i=0;i<n;++i)
         {
             if(arr[i]==k)
             {
-               /* printf("YES\n");
-                break;*/
                 f=1;
                 break;
             }
             else
             {
-               /* printf("NO\n");
-                break;*/
                 f=0;
             }
         }
