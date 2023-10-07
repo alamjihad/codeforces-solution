@@ -1,0 +1,33 @@
+#include<stdio.h>
+void ans(int n,int x)
+{
+		int p,s;
+		if(n<=2)
+		{
+			printf("1\n");
+		}
+		else
+		{
+			p=n-2;
+			if(p%x==0)
+			{
+				s=p/x;
+			}
+			else
+			{
+				s=p/x+1;
+			}
+			printf("%d\n",s+1);
+		}
+}
+int main()
+{
+	int t,n,x,p,s;
+	scanf ("%d",&t);
+	for(int i=0;i<t;++i)
+	{
+		scanf ("%d %d",&n,&x);
+		ans(n,x);
+	}
+	return 0;
+}
