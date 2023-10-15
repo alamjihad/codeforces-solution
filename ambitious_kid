@@ -1,0 +1,33 @@
+#include<stdio.h>
+int ans(int n)
+{
+    int arr[100000],i;
+   for(i=0;i<n;++i)
+   {
+       scanf ("%d",&arr[i]);
+       if(arr[i]==0)
+       {
+           return 0;
+       }
+       if(arr[i]<0)
+       {
+           arr[i]=(-1)*arr[i];
+       }
+   }
+   int s=arr[0];
+   for(i=1;i<n;++i)
+   {
+       if(arr[i]<s)
+       {
+           s=arr[i];
+       }
+   }
+   return s;
+}
+int main() {
+   int n,s;
+   scanf ("%d",&n);
+   s=ans(n);
+   printf ("%d",s);
+   return 0;
+}
