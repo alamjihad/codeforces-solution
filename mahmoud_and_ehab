@@ -1,0 +1,19 @@
+#include <stdio.h>
+void ans(int n)
+{
+    if(n%2==0)
+    {
+        printf("Mahmoud");
+    }
+    else
+    {
+        printf("Ehab");
+    }
+}
+int main() {
+    
+    int n;
+    scanf("%d",&n);
+    ans(n);
+    return 0;
+}
