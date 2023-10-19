@@ -1,0 +1,30 @@
+#include<stdio.h>
+void ans()
+{
+    	long long int a,b,n,s,d;
+    	scanf("%lld %lld %lld %lld",&a,&b,&n,&s);
+    	d=s/n;
+    	if(d>a)
+    	{
+    		d=a;
+    	}
+    	if(s-n*d<=b)
+    	{
+    		printf ("YES\n");
+    	}
+    	else
+    	{
+    		printf ("NO\n");
+    	}
+  
+}
+int main()
+{
+    int t;
+    scanf ("%d",&t);
+    for(int i=0;i<t;++i)
+    {
+        ans();
+    }
+    return 0;
+}
