@@ -1,0 +1,27 @@
+#include<stdio.h>
+int ans(int n,int m,int k)
+{
+	if(n<=m&&n<=k)
+	{
+		return 1;
+	}
+	else
+	{
+		return 2;
+	}
+}
+int main()
+{
+	int n,m,k,s;
+	scanf("%d %d %d",&n,&m,&k);
+	s=ans(n,m,k);
+	if(s==1)
+	{
+		printf ("YES");
+	}
+	else
+	{
+		printf ("NO");
+	}
+	return 0;
+}
